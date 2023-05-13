@@ -35,7 +35,7 @@ function search(srch_input){
     }
     if(result===null){
         writing=true;
-        write("Unknown query.")
+        write("Unknown query. Try 'help'.")
     }else{
         writing=true;
         write(result)
