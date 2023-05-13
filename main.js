@@ -11,6 +11,7 @@ function toggle(){
         Сейчас мало что здесь есть. Сайт только появился...\n \
         Но уверен что скоро тут будет что-то. Точно-точно! Главное чтобы я не забыл\n \
         Пока что вот ссылки на мои соусы ;)";
+        document.getElementById('deepsea').innerHTML="ПОГРУЗИТЬСЯ";
     }else{
         document.getElementById('lang')
         .innerHTML="ENG";
@@ -20,5 +21,6 @@ function toggle(){
         There's aint much now. I just started the site...\n \
         But wait! There will be some stuff I'll make. Hope I won't forget it.\n \
         At least here's my sauce just below ;)";
+        document.getElementById('deepsea').innerHTML="DIVE DEEP";
     }
 }
