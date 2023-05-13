@@ -3,12 +3,14 @@ var writing = false;
 var answers;
 fetch("faq.json").then(response => response.json()).then(json => answers = json);
 
-document.getElementById("inp")
-    .addEventListener("keyup", function(event) {
-    event.preventDefault();
-    if (event.key == 'Enter') {
-        search(document.getElementById("inp").value);
-    }
+window.addEventListener("DOMContentLoaded", (event) => {
+    document.getElementById("inp")
+        .addEventListener("keyup", function(event) {
+        event.preventDefault();
+        if (event.key == 'Enter') {
+            search(document.getElementById("inp").value);
+        }
+    })
 });
 
 function search(srch_input){
