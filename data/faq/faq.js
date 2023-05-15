@@ -21,6 +21,9 @@ function search(srch_input){
     if(!srch_input){
         document.getElementById("typo").insertAdjacentHTML("beforeend", ">><br>")
         return null
+    }else{
+        srch_input = srch_input.replace(/\s+/g, '');
+        srch_input = srch_input.toLowerCase();
     }
     var result = null;
     for (var i=0 ; i < answers.list.length ; i++){
