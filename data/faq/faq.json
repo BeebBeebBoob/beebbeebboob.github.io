@@ -1,8 +1,8 @@
 {"list":
 [
     {"question": "help", 
-    "answer_en": "FAQ with one word. No more. Commands: 'back' to go back. 'lang' to change language. 'clear' to clear FAQ_U Terminal.", 
-    "answer_ru": "FAQ одним словом. Не более одного! И только на английском. Команды: 'back' чтобы вернуться. 'lang' сменить язык. 'clear' чтобы очистить FAQ_U терминал."},
+    "answer_en": "FAQ with one word. No more. Commands: 'back' to go back. 'lang' to change language. 'clear' to clear FAQ_U Terminal. An example: 'me'.", 
+    "answer_ru": "FAQ одним словом. Не более одного! И только на английском. Команды: 'back' чтобы вернуться. 'lang' сменить язык. 'clear' чтобы очистить FAQ_U терминал. Пример: 'me'."},
     {"question": "back", "answer_en": ""},
     {"question": "lang", "answer_en": ""}, 
     {"question": "clear", "answer_en": ""},
