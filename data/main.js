@@ -1,4 +1,14 @@
-var lang_ru=true;
+var language = window.navigator.userLanguage || window.navigator.language;
+var lang_ru;
+if(language == "ru-RU" || language == "ru"){
+	lang_ru=false;
+}else{
+	lang_ru=true;
+}; // Yes. It's flipped just to update the site.
+
+window.addEventListener("DOMContentLoaded", (event) => {
+    toggle();
+});
 
 function toggle(){
     lang_ru=!lang_ru;
@@ -16,3 +26,4 @@ function toggle(){
         document.getElementById("text").innerHTML="Place to drop my stuff into. Why? Why not :)";
     }
 }
+

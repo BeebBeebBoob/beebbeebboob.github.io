@@ -1,10 +1,17 @@
 var writing = false;
-var lang_ru=true;
+var language = window.navigator.userLanguage || window.navigator.language;
+var lang_ru;
+if(language == "ru-RU" || language == "ru"){
+	lang_ru=true;
+}else{
+	lang_ru=false;
+};
 
 var answers;
 fetch("faq.json").then(response => response.json()).then(json => answers = json);
 
 window.addEventListener("DOMContentLoaded", (event) => {
+    document.getElementById("focusing").onclick = function () { document.getElementById("inp").focus(); document.getElementById("inp").select();};
     document.getElementById("inp")
         .addEventListener("keyup", function(event) {
         event.preventDefault();
@@ -13,6 +20,11 @@ window.addEventListener("DOMContentLoaded", (event) => {
         }
     })
 });
+
+function focus(){
+    document.getElementById("inp").focus();
+    document.getElementById("inp").select();
+}
 
 function search(srch_input){
     if(writing){
