@@ -77,7 +77,6 @@ a {
     font-size: 4vmin;
     font-family: 'jost';
     text-decoration: underline;
-    white-space: pre-line;
     margin: 0px;
     line-height: 5.5vh;
     text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
