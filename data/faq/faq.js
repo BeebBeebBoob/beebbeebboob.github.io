@@ -1,5 +1,7 @@
 var writing = false;
 var language = window.navigator.userLanguage || window.navigator.language;
+var urlParams = new URLSearchParams(window.location.search);
+var Param = urlParams.get('q');
 var lang_ru;
 if(language == "ru-RU" || language == "ru"){
 	lang_ru=true;
@@ -8,7 +10,13 @@ if(language == "ru-RU" || language == "ru"){
 };
 
 var answers;
-fetch("faq.json").then(response => response.json()).then(json => answers = json);
+fetch("faq.json").then(response => response.json()).then(json => answers = json).then(answers_value => {
+    if (Param){
+        search(Param);
+    }else{
+        write("Press Tab or screen then type 'help' to begin.\nНажмите Tab или на экран, и потом напишите 'help' чтобы приступить.\n");
+    };
+});
 
 window.addEventListener("DOMContentLoaded", (event) => {
     document.getElementById("focusing").onclick = function () { document.getElementById("inp").focus(); document.getElementById("inp").select();};
@@ -114,24 +122,43 @@ function redirecting(other_answer) {
             index++;
         }
     }
-    ID = setInterval(print, 15);
+    ID = setInterval(print, 10);
 } 
 
 function write(text){
     var index = 0;
     var end = text.length;
     var ID;
+    var para;
+    var para_text = "";
         
     var print = function print(){
-        if(index===end){
+        if(index===end){ //The end of cycle
             document.getElementById("typo").innerHTML = document.getElementById("typo").innerHTML + "<br>";
             writing=false;
             clearInterval(ID);
         }
         else{
             document.getElementById("typo").innerHTML = document.getElementById("typo").innerHTML + text[index];
+            if(text[index]==="["){ // sauce
+                index++ // after [
+                para = document.createElement("a");
+                para_text = "";
+                for (index; text[index] != "]"; index++){
+                    para_text += text[index];
+                }
+                para.href = "javascript:search('" + para_text + "');"
+                para.innerText = para_text;
+                document.getElementById("typo").appendChild(para);
+                return
+                // 01[345]78
+                // index now is 2, find index of ]
+                // 2 and 6 we get. so we just type in all <a> stuff and add to index var = (6-2)
+                // para.href = "javascript:search('" + a + "');"
+            }
             index++;
         }
+        window.scrollTo(0, document.body.scrollHeight);
     }
-    ID = setInterval(print, 15);
+    ID = setInterval(print, 12); // Recalls with delay in milisecs
 }

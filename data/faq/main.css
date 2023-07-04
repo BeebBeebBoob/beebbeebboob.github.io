@@ -40,3 +40,7 @@ button {
     position: absolute;
     border: 0;
 }
+
+a {
+    color: #ffff00;
+}
