@@ -55,7 +55,7 @@ function search(srch_input){
     document.getElementById("typo").insertAdjacentHTML("beforeend", ">>"+srch_input+"<br>");
     document.getElementById("inp").value = "";
 
-    if(srch_input === 'back'){
+    if(srch_input === "back"){
         window.location = '..';
         return
     }
@@ -70,6 +70,9 @@ function search(srch_input){
         }else{
             write("Language changed >>> ENG.")
         }
+        return
+    }
+    if(srch_input === ""){
         return
     }
     if(result===null){
@@ -131,6 +134,7 @@ function write(text){
     var ID;
     var para;
     var para_text = "";
+    var para_valid = true;
         
     var print = function print(){
         if(index===end){ //The end of cycle
@@ -142,19 +146,36 @@ function write(text){
             document.getElementById("typo").innerHTML = document.getElementById("typo").innerHTML + text[index];
             if(text[index]==="["){ // sauce
                 index++ // after [
+                para_valid = true;
                 para = document.createElement("a");
                 para_text = "";
                 for (index; text[index] != "]"; index++){
+                    if(text[index]===" "){ // Oh oh, Spacey!
+                        para_valid = false;
+                        break
+                    };
                     para_text += text[index];
+                } 
+                if(para_valid){
+                    let re = /(https:\/\/www\.|http:\/\/www\.|https:\/\/|http:\/\/)?[a-zA-Z0-9]{2,}(\.[a-zA-Z0-9]{2,})(\.[a-zA-Z0-9]{2,})(\:[0-9]{4})?/;
+                    if(re.test(para_text)){
+                        para.href = para_text
+                    }else{
+                        para.href = "javascript:search('" + para_text + "');"
+                    };
+                    para.innerText = para_text;
+                    document.getElementById("typo").appendChild(para);
+                }else{
+                    document.getElementById("typo").innerHTML = document.getElementById("typo").innerHTML + para;
                 }
-                para.href = "javascript:search('" + para_text + "');"
-                para.innerText = para_text;
-                document.getElementById("typo").appendChild(para);
                 return
                 // 01[345]78
                 // index now is 2, find index of ]
                 // 2 and 6 we get. so we just type in all <a> stuff and add to index var = (6-2)
                 // para.href = "javascript:search('" + a + "');"
+                // OR
+                // If we have spacebar, we will break the code in for cycle and make para_valid FALSE
+                // So para element won't be added
             }
             index++;
         }
