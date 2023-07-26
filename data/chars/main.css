@@ -1,0 +1,13 @@
+.charbody {
+  background-color: #F0F0F0;
+}
+
+.back {
+  position: absolute;
+  top: 0;
+  padding-top: 1vh;
+  padding-left: 1vw;
+}
+.back:hover {
+  filter: hue-rotate(120deg); 
+}
