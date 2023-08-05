@@ -1,5 +1,5 @@
 .charbody {
-  background-color: #F0F0F0;
+  background-image: url('/files/hex.png');
 }
 
 .title {
@@ -16,3 +16,50 @@
 .back:hover {
   filter: hue-rotate(120deg); 
 }
+
+.select {
+  margin: auto;
+  font-size: 1rem;
+}
+
+.winWindow {
+  border: 1px solid #222;
+  background-color: #FFF;
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+
+.winHeader {
+  background-color: #00a6e8;
+  color: #FFF;
+  font-family: 'pixelari';
+  height: 30px;
+  line-height: 30px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.charSelector {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+ }
+
+ #charSelector img
+ {
+   width: 80px;
+   margin-right: -10px;
+   filter: grayscale(90%) brightness(80%);
+   transition: filter 0.1s;
+ }
+ 
+ #charSelector img:hover {
+  filter: none; 
+ }
+ 
+ #charSelector img:active {
+  opacity: 0.9;
+ }
