@@ -1,0 +1,11 @@
+.black {
+    background-color: #000000;
+    color: #000000;
+}
+
+.whitetext {
+    background-color: #000000;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 4vmin;
+}
