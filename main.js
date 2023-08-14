@@ -21,6 +21,7 @@ function toggle(){
         Привет! Добро пожаловать в мой уголок! Мир Beeb!\n \
         Сейчас мало что здесь есть. Сайт только появился...\n \
         Но уверен что скоро тут будет что-то. Точно-точно! Главное чтобы я не забыл\n \
+        P.S. У меня сегодня день рождение. Круто. \n \
         Пока что вот ссылки на мои соусы ;)";
         document.getElementById('deepsea').innerHTML="ПОГРУЗИТЬСЯ";
     }else{
@@ -31,6 +32,7 @@ function toggle(){
         Hi-hi! Welcome to my place! Beeb World!\n \
         There's aint much now. I just started the site...\n \
         But wait! There will be some stuff I'll make. Hope I won't forget it.\n \
+        P.S. Its my birthday today. Cool. \n \
         At least here's my sauce just below ;)";
         document.getElementById('deepsea').innerHTML="DIVE DEEP";
     }
