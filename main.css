@@ -5,7 +5,7 @@
 
 .background {
     background-attachment: fixed;
-    background-image: url('./files/background.jpg');
+    background-image: url('./files/background.webp');
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -96,4 +96,5 @@ a img {
     background-color: #000;
     padding: 0.1rem;
     outline: solid;
+    top: 2vh;
 }
