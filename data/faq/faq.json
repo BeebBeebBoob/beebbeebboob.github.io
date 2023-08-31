@@ -462,5 +462,19 @@
         "pronounce",
         "answer_en":
         "I prefer to he/him or she/her for everyone, sorry if I made a mistake calling you wrongly!\nMyslef is he/him. Boy."
+    }, {
+        "question":
+        "gurps",
+        "answer_en":
+        "I've never been a player. Always been a master as the system can be hard to understand at first. At least one game I managed to do but only for awhile. Do I do games now? Maybe. Ask about it.",
+        "answer_ru":
+        "Ни разу не был игроком. Всегда был мастером.\nКак минимум одну игру я провёл и неплохо получилось. Хотя я рассчитывал правильно и игру забросили. Провожу ли я сейчас? Возможно. Спросите."
+    }, {
+        "question":
+        "gender",
+        "answer_en":
+        "I think so... Just maybe... Like I have dick and balls.. Yeah...\nI'm a guy.",
+        "answer_ru":
+        "Ну я так думаю... Возможно.... Ну типа у меня есть член и шары... Вероятно...\nЯ мужик."
     }]
 }
