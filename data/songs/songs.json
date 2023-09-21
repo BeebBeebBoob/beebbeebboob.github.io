@@ -1,6 +1,5 @@
 {
-    "list":[
-	{
+    "list": [{
         "song": "PHQUASE - lootus"
     }, {
         "song": "zYnthetic - No Winners"
@@ -541,5 +540,33 @@
         "song": "FIFTY FIFTY - Cupid (Twin Version)"
     }, {
         "song": "Arctic Monkeys - D Is For Dangerous"
+    }, {
+        "song": "Joji - Tick Tock"
+    }, {
+        "song": "Lemon Demon - Touch-Tone Telephone"
+    }, {
+        "song": "Surfaris - Wipe Out"
+    }, {
+        "song": "Lemon Demon - Cabinet Man"
+    }, {
+        "song": "AWOLNATION - I Am"
+    }, {
+        "song": "AWOLNATION - Kill Your Heroes"
+    }, {
+        "song": "Fleetwood Mac - The Chain"
+    }, {
+        "song": "AWOLNATION - Woman Woman"
+    }, {
+        "song": "Steam Powered Giraffe - Honeybee"
+    }, {
+        "song": "Kavinsky - Nightcall"
+    }, {
+        "song": "Metric - Black Sheep (Brie Larson Vocal Version)"
+    }, {
+        "song": "Sex Bob-Omb - Threshold"
+    }, {
+        "song": "Alkaline Trio - Movin' Right Along"
+    }, {
+        "song": "22 Jaq - World Orca"
     }]
 }
