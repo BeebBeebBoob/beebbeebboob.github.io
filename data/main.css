@@ -175,3 +175,11 @@ a {
   left: 1vw;
   width: 20vw;
 }
+
+.skrell {
+  position: absolute;
+  transform: matrix(-0.9, 0.2, -0.2, 0.4, 0, 0);
+  right: 0vw;
+  top: 23vh;
+  width: 20vw;
+}

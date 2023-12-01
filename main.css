@@ -90,8 +90,8 @@ a img {
 }
 
 #deepsea {
-    color: #020077;
-    text-shadow: 0 0 0.5em blue;
+    color: darkcyan;
+    text-shadow: 0 0 0.2em cyan;
     text-decoration: none;
     background-color: #000;
     padding: 0.1rem;

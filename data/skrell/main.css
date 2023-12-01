@@ -1,0 +1,36 @@
+html {
+    height: 100%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: #000000;
+}
+
+img {
+    object-fit: cover;
+}
+
+a {
+	font-size: 40px;
+	position: relative;
+	display: block;
+	width: fit-content;
+	text-decoration: none;
+	color: aquamarine;
+}
+
+.mainbox {
+    height: 80vh;
+    margin: 5vh;
+    background-color: #FFFFFF;
+    padding: 1vmin;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    display: flex;
+}
+
+.photo {
+    width: 33%;
+    image-rendering: -webkit-optimize-contrast;
+}
