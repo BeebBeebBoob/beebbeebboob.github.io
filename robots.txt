@@ -1,2 +1,6 @@
-User-Agent: *
-Disallow: /data/
+# no bot may crawl 
+User-agent: *
+Disallow: /data
+Disallow: /files
+
+X-Robots-Tag: nofollow
