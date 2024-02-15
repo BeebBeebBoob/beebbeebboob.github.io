@@ -2,7 +2,7 @@ body {
     background-color: rgb(113, 139, 188);
     font-family: 'Lucida Sans Unicode', 'Segoe UI', Tahoma, 'Bitstream Vera Sans', Verdana, Helvetica, Arial, sans-serif;
     font-size: 20pt;
-    text-align: center
+    text-align: center;
 }
 
 
@@ -26,4 +26,15 @@ body {
 
 .list a:hover {
 	background: #003A87;
+}
+
+.small {
+	font-size: 10pt;
+	display: inline;
+	position: fixed;
+	vertical-align: middle;
+}
+
+.context {
+	font-size: 18pt;
 }
