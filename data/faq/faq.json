@@ -476,5 +476,12 @@
         "I think so... Just maybe... Like I have dick and balls.. Yeah...\nI'm a guy.",
         "answer_ru":
         "Ну я так думаю... Возможно.... Ну типа у меня есть член и шары... Вероятно...\nЯ мужик."
+    }, {
+        "question":
+        "age",
+        "answer_en":
+        "I'm old enough to buy myself a alcohol, although I don't drink.",
+        "answer_ru":
+        "Я достаточно взрослый для покупки алкоголя, хотя я и не пью."
     }]
 }
