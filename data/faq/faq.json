@@ -483,5 +483,10 @@
         "I'm old enough to buy myself a alcohol, although I don't drink.",
         "answer_ru":
         "Я достаточно взрослый для покупки алкоголя, хотя я и не пью."
-    }]
+    }, {
+        "question":
+        "homestuck",
+        "answer_en":
+        "Great webcomic. If I was gonna compare it to something, first thing comes in mind is Harry Potter. Big ass book, big fandom and lots of stuff. But Homestuck is bigger and way more complex. And this is what it makes delicious to re-read and enjoy fandom, fanfics and fanart and e.t.c."
+	}]
 }
