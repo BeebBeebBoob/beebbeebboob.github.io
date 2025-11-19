@@ -1,0 +1,110 @@
+html {
+    height: 100%;
+    font-family: 'Courier New', Courier, monospace;
+	font-size: 1.85vmin;
+}
+
+body {
+    background-color: #000000;
+}
+
+img {
+    object-fit: cover;
+}
+
+a {
+	font-size: 40px;
+	position: relative;
+	display: block;
+	width: fit-content;
+	text-decoration: none;
+	color: aquamarine;
+}
+
+button {
+    background: #000000;
+    font-family: inherit;
+	font-size: 40px;
+	position: relative;
+	display: block;
+	width: fit-content;
+	text-decoration: none;
+	color: aquamarine;
+}
+
+.button-div {
+	display: flex;
+	column-gap: 10px;
+}
+
+.buttons {
+	margin: 0;
+	outline: 2px solid aquamarine;
+	border: 0;
+	padding: 0;
+}
+
+.mainbox {
+    height: 80vh;
+    margin: 5vh;
+    background-color: #FFFFFF;
+    padding: 1vmin;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    display: flex;
+}
+
+@media (max-width: 1300px) {
+	.mainbox {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+
+.text {
+	width: fit-content;
+	overflow: hidden;
+}
+
+.photo1 {
+    width: 33%;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+
+.photo2 {
+    width: 33%;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+.photo3 {
+	display: none;
+	float: right;
+	width: calc(8vh + 30vw);
+}
+
+@media (max-width: 1100px) {
+html {
+	font-size: calc(8px + 0.9vmax);
+}
+.photo1 {
+	width: 40%;
+}
+.photo2 {
+    display: none;
+}
+}
+
+@media (max-width: 750px) {
+.mainbox {
+	align-items: flex-start;
+	height: auto;
+}
+.photo1 {
+	display: none;
+}
+.photo3 {
+	display: block;
+}
+}
